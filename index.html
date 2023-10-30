@@ -20,9 +20,9 @@
             <div class="list-item">
                 <ul>
                     <li><a class="list-item" href="#">Home</a></li>
-                    <li><a class="list-item" href="#">About</a></li>
-                    <li><a class="list-item" href="#">Skill</a></li>
-                    <li><a class="list-item" href="#">Contact</a></li>
+                    <li><a class="list-item" href="#about">About</a></li>
+                    <li><a class="list-item" href="#service">Skill</a></li>
+                    <li><a class="list-item" href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="toggle">
@@ -60,14 +60,14 @@
             </div>
         </div>
     </div>
-    <div class="hero-about" id="about-me"  >
-        <div class="hero-about-dekstop">
-            <div class="area-img">
+    <div class="hero-about " id="about" >
+        <div class="hero-about-dekstop ">
+            <div class="area-img reveal fade-left">
                 <div class="img-brand2">
                     <img src="aboutme.png" width="400px" alt="">
                 </div>
             </div>
-            <div class="area-tittle2">
+            <div class="area-tittle2 reveal fade-left">
                 <div class="text-about">
                     <p>About Me</p>
                 </div>
@@ -87,34 +87,34 @@
         </div>
 
     </div>
-    <div class="service-tittle">
-        <div class="service-text">
+    <div class="service-tittle" id="service">
+        <div class="service-text reveal fade-bottom">
             <h2>My Experience & Skill</h2>
         </div>
-        <div class="service-text-info">
+        <div class="service-text-info reveal fade-bottom">
             <p>I have some skills and experience that might be useful for others</p>
         </div>
     </div>
-    <div class="service-page">
+    <div class="service-page" id="service">
         <div class="service-column">
-            <div class="service1">
+            <div class="service1 reveal fade-left">
                 <img src="2d3d.png" width="60px">
                 <h2>2D & 3D<br> Design</h2>
                 <p>I have some skills in the multimedia field, especially in making designs in 2d and 3d quality</p>
             </div>
-            <div class="service1">
+            <div class="service1 reveal fade-left">
                 <img src="web.png" width="60px">
                 <h2>Software Developer</h2>
                 <p>I have skills in programming, I can create a web or application using html, css, kotlin, java, and
                     others</p>
             </div>
-            <div class="service1">
+            <div class="service1 reveal fade-right">
                 <img src="studyic.png" width="60px">
                 <h2>English Language</h2>
                 <p>I have sufficient skills in the field of English, I can carry out conversations, speeches, and others
                     in English.</p>
             </div>
-            <div class="service1">
+            <div class="service1 reveal fade-right">
                 <img src="islamic.png" width="60px">
                 <h2>Islam Knowlage</h2>
                 <p>I have sufficient knowledge in the Islamic world, the science of aqidah, fiqh, hadith, and others.
@@ -123,18 +123,18 @@
         </div>
 
     </div>
-    <div class="contact-page">
-        <div class="contact-tittle">
+    <div class="contact-page" id="contact">
+        <div class="contact-tittle reveal fade-bottom">
             <div class="tittle-text">Contact Me</div>
             <div class="tittle-info">contact me for need information</div>
         </div>
-        <div class="contact-map">
+        <div class="contact-map reveal fade-bottom">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253658.18637909877!2d106.68099138497846!3d-6.595962756985674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bc6e5be3d9bd%3A0x6b9881dabd801476!2sSMP-SMK%20IDN%20Boarding%20School!5e0!3m2!1sen!2sid!4v1692842561898!5m2!1sen!2sid"
                 width="700" height="250" style="border-radius: 30px;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="contact-media">
+        <div class="contact-media ">
             <a class="social-buttons" href="#">Facebook</a>
             <a class="social-buttons" href="#">Youtube</a>
             <a class="social-buttons" href="#">Instagram</a>
@@ -248,6 +248,25 @@
             </div>
     
         </div>
+        <script>
+            function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
+        </script>
 </body>
 
 </html>
