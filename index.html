@@ -2,271 +2,1445 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal</title>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ihsanafr</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="navbar-brand">
-            <img src="navbrandimg.png" width="70px" alt="">
-        </div>
-        <div class="navbar-item">
-            <div class="list-item">
-                <ul>
-                    <li><a class="list-item" href="#">Home</a></li>
-                    <li><a class="list-item" href="#about">About</a></li>
-                    <li><a class="list-item" href="#service">Skill</a></li>
-                    <li><a class="list-item" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="toggle">
-                <a href="#"><img src="toggle.png" width="20px"></a>
-                <ul class="dropdown">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skill</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="hero">
-        <div class="hero-dekstop">
-            <div class="area-tittle">
-                <div class="text-welcome">
-                    <p>Welcome To My</p>
-                </div>
-                <div class="text-title">
-                    <p>Personal<br>Website</p>
-                </div>
-                <div class="text-tagline">
-                    <p>All About Myself</p>
-                </div>
-                <div class="button-explore">
-                    <a href="#" class="btn-about">About me</a>
-                    <a href="#" class="btn-contact">Let's start</a>
-                </div>
-            </div>
-            <div class="area-img">
-                <div class="img-brand">
-                    <img src="homeimg.png" width="400px" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="hero-about " id="about" >
-        <div class="hero-about-dekstop ">
-            <div class="area-img reveal fade-left">
-                <div class="img-brand2">
-                    <img src="aboutme.png" width="400px" alt="">
-                </div>
-            </div>
-            <div class="area-tittle2 reveal fade-left">
-                <div class="text-about">
-                    <p>About Me</p>
-                </div>
-                <div class="text-title2">
-                    <p> Hi!,I'm Ihsan</p>
-                </div>
-                <div class="text-tagline2">
-                    <p>Ihsan ahmad fakhriansyah.a 15-year-old student studying at IDN boarding school, born in Jakarta
-                        April 24, 2008, lives in Bekasi, the second child of 3 siblings. has a hobby of reading,
-                        writing, coding, design, and others</p>
-                </div>
-                <div class="button-explore2">
-                    <a href="#" class="btn-port">My Portfolio</a>
-                    <a href="#" class="btn-contact2">contact</a>
-                </div>
-            </div>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/photo.png.png" style="border-radius: 30px;" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Ihsan Ahmad F</h1>
+
+          <p class="title">Full-Stack developer</p>
         </div>
 
-    </div>
-    <div class="service-tittle" id="service">
-        <div class="service-text reveal fade-bottom">
-            <h2>My Experience & Skill</h2>
-        </div>
-        <div class="service-text-info reveal fade-bottom">
-            <p>I have some skills and experience that might be useful for others</p>
-        </div>
-    </div>
-    <div class="service-page" id="service">
-        <div class="service-column">
-            <div class="service1 reveal fade-left">
-                <img src="2d3d.png" width="60px">
-                <h2>2D & 3D<br> Design</h2>
-                <p>I have some skills in the multimedia field, especially in making designs in 2d and 3d quality</p>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
-            <div class="service1 reveal fade-left">
-                <img src="web.png" width="60px">
-                <h2>Software Developer</h2>
-                <p>I have skills in programming, I can create a web or application using html, css, kotlin, java, and
-                    others</p>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ihsan.afr20@gmail.com" class="contact-link">ihsan.afr20@gmail.com</a>
             </div>
-            <div class="service1 reveal fade-right">
-                <img src="studyic.png" width="60px">
-                <h2>English Language</h2>
-                <p>I have sufficient skills in the field of English, I can carry out conversations, speeches, and others
-                    in English.</p>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-            <div class="service1 reveal fade-right">
-                <img src="islamic.png" width="60px">
-                <h2>Islam Knowlage</h2>
-                <p>I have sufficient knowledge in the Islamic world, the science of aqidah, fiqh, hadith, and others.
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="https://wa.me/+6285814265290" class="contact-link">+62 858 1426 5290</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">April 24, 2008</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Bekasi, Jawa barat, Indonesia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi everyone! My name is Ihsan Ahmad Fakhriansyah, usually called Ihsan, born in Jakarta on April 24 2008. I live in Bekasi and am currently in class 10 at SMK Software Engineering Department at SMK IDN Boarding School Jonggol. I am interested in computer programming, especially website development, as well as other IT fields such as multimedia, graphic design, UI/UX design, and photo and video editing.
+          </p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Front-End Developer</h4>
+
+                <p class="service-item-text">
+                  I can create a front view for the page section of a website platform
                 </p>
-            </div>
-        </div>
+              </div>
 
-    </div>
-    <div class="contact-page" id="contact">
-        <div class="contact-tittle reveal fade-bottom">
-            <div class="tittle-text">Contact Me</div>
-            <div class="tittle-info">contact me for need information</div>
-        </div>
-        <div class="contact-map reveal fade-bottom">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253658.18637909877!2d106.68099138497846!3d-6.595962756985674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bc6e5be3d9bd%3A0x6b9881dabd801476!2sSMP-SMK%20IDN%20Boarding%20School!5e0!3m2!1sen!2sid!4v1692842561898!5m2!1sen!2sid"
-                width="700" height="250" style="border-radius: 30px;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="contact-media ">
-            <a class="social-buttons" href="#">Facebook</a>
-            <a class="social-buttons" href="#">Youtube</a>
-            <a class="social-buttons" href="#">Instagram</a>
-            <a class="social-buttons" href="#">Linkedin</a>
-            <a class="social-buttons" href="#">Gmail</a>
-        </div>
+            </li>
 
-    </div>
-    <div class="footer">
-        <p>© 2023 Ihsan ahmad. All right Reserved.</p>
-    </div>
-    <div class="hero-phone">
-        <div class="area-img">
-            <div class="img-brand">
-                <img src="homeimg.png" width="250px" alt="">
-            </div>
-        </div>
-        <div class="area-tittle2-phone">
-            <div class="text-welcome">
-                <p>Welcome To My</p>
-            </div>
-            <div class="text-title-phone">
-                <p>Personal<br>Website</p>
-            </div>
-            <div class="text-tagline">
-                <p>All About Myself</p>
-            </div>
-            <div class="button-explore">
-                <a href="#" class="btn-about">About me</a>
-                <a href="#" class="btn-contact">Let's start</a>
-            </div>
-        </div>
-    </div>
-    <div class="hero-about-phone">
-        <div class="area-img-phone">
-            <div class="img-brand2-phone">
-                <img src="aboutme.png" width="300px" alt="">
-            </div>
-        </div>
-        <div class="area-tittle2-phone">
-            <div class="text-about">
-                <p>About Me</p>
-            </div>
-            <div class="text-title2">
-                <p> Hi!,I'm Ihsan</p>
-            </div>
-            <div class="text-tagline2">
-                <p>Ihsan ahmad fakhriansyah.a 15-year-old student studying at IDN boarding school, born in Jakarta
-                    April 24, 2008, lives in Bekasi, the second child of 3 siblings. has a hobby of reading,
-                    writing, coding, design, and others</p>
-            </div>
-            <div class="button-explore2">
-                <a href="#" class="btn-port">My Portfolio</a>
-                <a href="#" class="btn-contact2">contact</a>
-            </div>
-        </div>
-    </div>
-    <div class="service-tittle-phone">
-        <div class="service-text-phone">
-            <h3>My Experience & Skill</h3>
-        </div>
-        <div class="service-text-info-phone">
-            <p>I have some skills and experience <br>that might be useful for others</p>
-        </div>
-    </div>
-    <div class="service-page-phone">
-        <div class="service-column-phone">
-            <div class="service1-phone">
-                <img src="2d3d.png" width="60px">
-                <h2>2D & 3D Design</h2>
-                <p>I have some skills in the multimedia field, especially in making designs in 2d and 3d quality</p>
-            </div>
-            <div class="service1-phone">
-                <img src="web.png" width="60px">
-                <h2>Software Developer</h2>
-                <p>I have skills in programming, I can create a web or application using html, css, kotlin, java, and
-                    others</p>
-            </div>
-            <div class="service1-phone">
-                <img src="studyic.png" width="60px">
-                <h2>English Language</h2>
-                <p>I have sufficient skills in the field of English, I can carry out conversations, speeches, and others
-                    in English.</p>
-            </div>
-            <div class="service1-phone">
-                <img src="islamic.png" width="60px">
-                <h2>Islam Knowlage</h2>
-                <p>I have sufficient knowledge in the Islamic world, the science of aqidah, fiqh, hadith, and others.
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Back-End Developer</h4>
+
+                <p class="service-item-text">
+                  I can create a system to manage data on a website platform
                 </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">2D & 3D Designer</h4>
+
+                <p class="service-item-text">
+                  I can create 2D and 3D designs such as UI UX, graphic design, and others
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Video Editor</h4>
+
+                <p class="service-item-text">
+                  I have the skills to edit interesting video works
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Indonesia" width="80" data-modal-img>
+              </figure>
+
+              
             </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
-        <div class="contact-page-phone">
-            <div class="contact-tittle">
-                <div class="tittle-text-phone">Contact Me</div>
-                <div class="tittle-info">contact me for need information</div>
-            </div>
-            <div class="contact-map-phone">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253658.18637909877!2d106.68099138497846!3d-6.595962756985674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bc6e5be3d9bd%3A0x6b9881dabd801476!2sSMP-SMK%20IDN%20Boarding%20School!5e0!3m2!1sen!2sid!4v1692842561898!5m2!1sen!2sid"
-                    width="400" height="450" style="border-radius: 30px;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="contact-media">
-                <a class="social-buttons" href="#" target="_blank">Facebook</a>
-                <a class="social-buttons" href="#">Youtube</a>
-                <a class="social-buttons" href="#">Instagram</a>
-            </div>
-            <div class="contact-media-phone">
-                <a class="social-buttons-phone" href="#">Linkedin</a>
-                <a class="social-buttons-phone" href="#">Gmail</a>
-            </div>
-    
-        </div>
-        <script>
-            function reveal() {
-      var reveals = document.querySelectorAll(".reveal");
 
-      for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
+        <section class="testimonials">
 
-        if (elementTop < windowHeight - elementVisible) {
-          reveals[i].classList.add("active");
-        } else {
-          reveals[i].classList.remove("active");
-        }
-      }
-    }
+          <h3 class="h3 testimonials-title">Language</h3>
 
-    window.addEventListener("scroll", reveal);
-        </script>
+          <ul class="service-list ">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box" style="border-radius: 100px;">
+                  <img src="./assets/images/language1.png" alt="Indonesia" width="10" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Indonesia</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Indonesian is my native language that I use every day
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box" style="border-radius: 100px;">
+                  <img src="./assets/images/language2.png" alt="English" width="10" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>English</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I have a lot of experience in using English such as communication, speeches, presentations, etc
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            </ul>
+
+        </section>
+
+
+
+
+
+
+      </article>
+
+
+      <!--
+        - #Skills
+      -->
+
+      <article class="blog" data-page="skills">
+
+        <header>
+          <h2 class="h2 article-title">Skills</h2>
+        </header>
+
+        <section class="service">
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">HTML</h4>
+
+                <p class="service-item-text">
+                  I am proficient in building and optimizing websites using HTML.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">CSS</h4>
+
+                <p class="service-item-text">
+                  I am an expert in applying CSS for web design.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Javascript</h4>
+
+                <p class="service-item-text">
+                  I have sufficient understanding and experience in using JavaScript
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Boostrap</h4>
+
+                <p class="service-item-text">
+                  I am experienced and skilled in styling websites using the Bootstrap.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Tailwind</h4>
+
+                <p class="service-item-text">
+                  I am experienced and skilled in styling websites using the Tailwind.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Laravel</h4>
+
+                <p class="service-item-text">
+                  I have enough experience and skills in using the Laravel framework
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">2D & 3D Design</h4>
+
+                <p class="service-item-text">
+                  I am skilled in multimedia design such as UI UX, graphic design, 3D, etc
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Video Editing</h4>
+
+                <p class="service-item-text">
+                  I am skilled at editing videos to make them more interesting
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Communication</h4>
+
+                <p class="service-item-text">
+                  I often communicate as long as it is important and useful
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Public Speaking</h4>
+
+                <p class="service-item-text">
+                  I have a lot of experience in public speaking, especially in English
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!-- Tools  -->
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">My Tools</h3>
+
+          <ul class="service-list ">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>VS Code</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    the platform that I use to do programming with many programming languages
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Figma</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    the device or platform that I usually use for my design needs
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Notion</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    the platform that I use to organize everything so that it is more planned and productive
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Spline</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    a platform for me to learn, create and work in 3d design
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Davinci Resolve</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    an application that is a place for me to learn and work in video editing
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Capcut</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    the application that I use to edit videos for my work and projects
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Gamma AI</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    AI platform that helps make it easier for me to create documents and slides
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>ChatGPT</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    AI platform which helped me a lot in learning and developing skills
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Gemini</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    AI platform where I ask a lot of questions about my projects
+                  </p>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+          
+
+        </section>
+        <!-- Tools  -->
+
+
+
+      </article>
+
+
+      <!--
+        - project
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Project</h2>
+        </header>
+
+        <section class="projects">
+
+          
+
+          <div class="filter-select-box">
+
+            <p class="filter-select" data-select>
+            </p>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://smartedu24.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pro1.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">E-learning Website - SmartEdu</h3>
+
+                <p class="project-category">Website project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pro2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Agriculture Website - Petani bangsa</h3>
+
+                <p class="project-category">Website project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://ihsanafr.github.io/alfajr-tahfidz/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pro3.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Company Profile - AlFajr</h3>
+
+                <p class="project-category">Website project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://ihsanafr.github.io/five-library/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pro4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Eccomerce UI - Five Library</h3>
+
+                <p class="project-category">Website project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://murottal-ihsan.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pro5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">I murrotal Website</h3>
+
+                <p class="project-category">Website project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://medium.com/@arkan.fp/case-study-wisatya-app-79555cbdbdf9">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pro6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Wisatya App</h3>
+
+                <p class="project-category">UI-UX Mobile project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://www.figma.com/proto/RfXkI7o3YhPa2yu37klwE5/DIGIKOM?page-id=0%3A1&node-id=2-5&viewport=454%2C215%2C0.03&t=fu5iBLSISfN3apXF-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=41%3A62">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pro7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Digikom App</h3>
+
+                <p class="project-category">UI-UX Mobile project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://www.figma.com/proto/PGAuBb6hl9ChKHYuwLYVxi/HealTime-App-%7C-CareTaker?node-id=159-1081&t=evb3l49lWdtPcO1n-1&scaling=scale-down&page-id=4%3A2&starting-point-node-id=159%3A1081">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pro8.png" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Healtime App</h3>
+
+                <p class="project-category">UI-UX Mobile project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pro9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Proggraming Website</h3>
+
+                <p class="project-category">IT Book</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pro10.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">framework website</h3>
+
+                <p class="project-category">IT Book</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="timeline" style="margin-top: 50px;">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certificates</h3>
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c1.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">CSS Basic</h3>
+              <p class="project-category">Skilvul</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c2.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">HTML Basic</h3>
+              <p class="project-category">Skilvul</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c3.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Javascript Basic</h3>
+              <p class="project-category">Skilvul</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c4.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Web development pemula - special challange</h3>
+              <p class="project-category">Skilvul</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c5.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Participant Mini bootcamp Web Development</h3>
+              <p class="project-category">Skilvul</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c6.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Belajar Dasar Pemrograman Web</h3>
+              <p class="project-category">Dicoding</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c7.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Belajar Dasar Pemrograman Javascript</h3>
+              <p class="project-category">Dicoding</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c8.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Belajar Membuat front-end web pemula</h3>
+              <p class="project-category">Dicoding</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c9.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Laravel protections</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c10.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Laravel additional security</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c11.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Laravel : configure, validate, authenticate, authorize</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c12.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Learn Tailwindcss</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c13.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Learn Boostrap</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c14.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Learn UI Design fundamentals</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c15.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Learn responsive web design</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c16.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Learn CSS flexbox</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c17.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Learn CSS Animations</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c18.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Learn CSS Variables</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c19.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Learn CSS Grid </h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c20.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">From Figma to code</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c21.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Build a space travel website</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c22.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Learn UI Design</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c23.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Learn HTML & CSS</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c24.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Proggraming fundamentals in kotlin</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c25.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Version Control</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c26.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Introduction to Android mobile application Development</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c27.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Introduction to Software engginering</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c28.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Developing website and front-end with boostrap</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c29.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Mastering laravel framework and php</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c30.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Learn UI Design for Web developers</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c31.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Secure Coding In laravel</h3>
+              <p class="project-category">Coursera</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c32.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Mempersiapkan diri bersaing didunia IT</h3>
+              <p class="project-category">Dicoding Event</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c33.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Participant UI UX Competition</h3>
+              <p class="project-category">Competition</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c34.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Participant Hackathon Competition</h3>
+              <p class="project-category">Competition</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c35.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">2nd Winner UI UX Competition</h3>
+              <p class="project-category">Competition</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <img src="./assets/images/certificates/c36.png" alt="finance" loading="lazy">
+              </figure>
+              <h3 class="project-title">Participant Web Development Competition</h3>
+              <p class="project-category">Competition</p>
+            </li>
+          </ul>
+
+          
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Junior High School IDN Boarding School</h4>
+              <span>2020 - 2023</span>
+              <p class="timeline-text">
+                At IDN Junior High School, I was an IT student who studied a lot of knowledge in the IT field, such as the basics of creating games, applications, websites. graphic design, photo and video editing, IoT robotics, and so on
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Vocational High school of IDN Boarding School</h4>
+              <span>2023 — Present</span>
+              <p class="timeline-text">
+                At IDN Vocational High school, I'm a software Engineering student I studied website and application development using several programming languages, frameworks, and platforms such as HTML, CSS, Javascript, Kotlin, Flutter, Boostrap, Laravel, PHP, Tailwind, and others
+              </p>
+            </li>
+
+          </ol>
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">2nd Champion UI UX Competition, Universitas Dian Nuswantoro</h4>
+              <span>Juni 2024</span>
+              <p class="timeline-text">
+                Apart from being proud of getting the 2nd place award, I also got a lot of experience and lessons from this competition, such as teamwork, communication, public speaking, and others.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Participant Google Academy Study Jam, Google Indonesia </h4>
+              <span>May 2024 - July 2024</span>
+              <p class="timeline-text">
+                I learned a lot from this event, especially in the areas of application development and application marketing
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Participant DBS Founding Coding Camp, Dicoding</h4>
+              <span>Feb 2024 - June 2024</span>
+              <p class="timeline-text">
+                In this event, I took a free class to learn how to create front-end websites and I got a certificate
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Website Trainers, GriyaSunnah Vocational School</h4>
+              <span>Feb 2024</span>
+              <p class="timeline-text">
+                Become a website trainer for 20 people and get benefits, namely teaching, public speaking, and improving skills
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Participant UI UX Competition, Ikom Unika </h4>
+              <span>Feb 2024</span>
+              <p class="timeline-text">
+                participating in UI UX competitions thereby improving my skills in application design development
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Participant Website Competition, Universitas Kuningan </h4>
+              <span>Feb 2024</span>
+              <p class="timeline-text">
+                participating in website competitions thus improving my skills in website development and programming
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Website Trainers, Man 1 Tangerang</h4>
+              <span>Feb 2024</span>
+              <p class="timeline-text">
+                Become a website trainer for 30 people and get benefits, namely teaching, public speaking, and improving skills
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Participant Website Competition by InvoFest</h4>
+              <span>Feb 2024 - June 2024</span>
+              <p class="timeline-text">
+                participating in website competitions thus improving my skills in website development and programming
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Participant Mini Bootcamp web development Skilvul </h4>
+              <span>Feb 2024 - June 2024</span>
+              <p class="timeline-text">
+                Participate in a bootcamp to learn website frontend development by learning HTML, CSS, and JavaScript
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        
+
+      </article>
+
+
+      
+
+
+
+
+
+      
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
