@@ -33,11 +33,7 @@
     hsla(240, 1%, 18%, 0.251) 0%, 
     hsla(240, 2%, 11%, 0) 100%
   ), hsl(240, 2%, 13%);
-  --bg-gradient-yellow-1: linear-gradient(
-    to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
-  );
+  
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
     hsla(45, 100%, 71%, 0.251) 0%, 
@@ -45,11 +41,7 @@
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: 
     hsla(143, 100%, 28%, 0) 50%;
-  --text-gradient-yellow: linear-gradient(
-    to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
-  );
+  
 
   /* solid */
 
@@ -148,7 +140,7 @@ input, textarea {
   color: rgba(46, 57, 82, 1);
 }
 
-:focus { outline-color: var(--orange-yellow-crayola); }
+:focus { outline-color: white }
 
 html { font-family: var(--ff-poppins); }
 
